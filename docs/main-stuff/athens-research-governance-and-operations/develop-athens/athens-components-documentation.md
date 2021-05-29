@@ -6,7 +6,7 @@ This documentation provides a technical overview regarding how Athens components
 
 ## How Components are Parsed
 
-The Athens [parser]() considers everything in double curly brackets \(`{{}}`\) a component. You can have all kinds of syntaxes in a component, as the everything in the component is matched using regular expressions first and could be further parsed using instaparse if it has a more complex syntax.
+The Athens parser considers everything in double curly brackets \(`{{}}`\) a component. You can have all kinds of syntaxes in a component, as the everything in the component is matched using regular expressions first and could be further parsed using instaparse if it has a more complex syntax.
 
 After the parsing process, the `:component` list would be a variadic list in which the first element is the unparsed string for more efficient pattern matching while rest of the elements are parsed tree for things like dynamic references & auto page creation. Will add documentation.
 

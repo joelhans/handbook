@@ -115,7 +115,7 @@ OS - Windows 10, MacOS Catalina v10.15.6
 4. Select the `:renderer` build to connect to.
 5. In another terminal tab, run `npx electron .`
 
-   ![load the namespace](doc/vscode-calva-repl-config.PNG)
+   ![load the namespace](/static/img/docs/vscode-calva-repl-config.PNG)
 
 ### Vim Plugins
 
