@@ -1,6 +1,6 @@
 # Onboarding for New Clojurians
 
-![](../../../.gitbook/assets/image%20%281%29.png)
+![](/img/docs/clojure-map.png)
 
 ## Learning Clojure\(Script\) Fundamentals
 

@@ -19,37 +19,62 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'intro',
+          docId: 'main-stuff/welcome/README',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Using Athens',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          type: 'doc',
+          docId: 'main-stuff/using-athens-product/README',
+          position: 'left',
+          label: 'Using Athens',
+        },
+        {
+          type: 'doc',
+          docId: 'main-stuff/contributing',
+          position: 'left',
+          label: 'Contribute',
+        },
+        {
+          type: 'doc',
+          docId: 'main-stuff/athens-research-governance-and-operations/README',
+          position: 'left',
+          label: 'Athens Research',
+        },
+        {
+          type: 'doc',
+          docId: 'main-stuff/learning-at-athens-academy-education/README',
+          position: 'left',
+          label: 'Athens Academy',
+        },
+        {
+          type: 'doc',
+          docId: 'help/contact-us',
+          position: 'left',
+          label: 'Help',
+        },
+        {
+          href: 'https://github.com/athensresearch/athens',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Using Athens',
+              to: 'main-stuff/using-athens-product/getting-started',
             },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
             {
               label: 'Discord',
               href: 'https://discordapp.com/invite/docusaurus',
@@ -64,12 +89,8 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/athensresearch/athens',
             },
           ],
         },
@@ -85,13 +106,12 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/athensresearch/handbook/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
+        docsHelp: {
+          sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/athensresearch/handbook/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
