@@ -2,27 +2,21 @@
 module.exports = {
   title: 'Athens Research Handbook',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://handbook.',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'athensresearch', // Usually your GitHub org/user name.
   projectName: 'handbook', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Athens Research Handbook',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Athens Research',
+        src: 'img/favicon.png',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'main-stuff/welcome/README',
-          position: 'left',
-          label: 'Using Athens',
-        },
         {
           type: 'doc',
           docId: 'main-stuff/using-athens-product/README',
@@ -37,15 +31,15 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'main-stuff/athens-research-governance-and-operations/README',
-          position: 'left',
-          label: 'Athens Research',
-        },
-        {
-          type: 'doc',
           docId: 'main-stuff/learning-at-athens-academy-education/README',
           position: 'left',
           label: 'Athens Academy',
+        },
+        {
+          type: 'doc',
+          docId: 'main-stuff/athens-research-governance-and-operations/README',
+          position: 'left',
+          label: 'Athens Research',
         },
         {
           type: 'doc',
@@ -70,6 +64,22 @@ module.exports = {
               label: 'Using Athens',
               to: 'main-stuff/using-athens-product/getting-started',
             },
+            {
+              label: 'Contribute',
+              to: 'main-stuff/contributing',
+            },
+            {
+              label: 'Athens Academy',
+              to: 'main-stuff/learning-at-athens-academy-education/README',
+            },
+            {
+              label: 'Athens Research',
+              to: 'main-stuff/athens-research-governance-and-operations/README',
+            },
+            {
+              label: 'Help',
+              to: 'help/contact-us',
+            },
           ],
         },
         {
@@ -83,6 +93,10 @@ module.exports = {
               label: 'Twitter',
               href: 'https://twitter.com/docusaurus',
             },
+            {
+              label: 'Blog',
+              href: 'https://athensresearch.org',
+            },
           ],
         },
         {
@@ -92,12 +106,19 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/athensresearch/athens',
             },
+            {
+              label: 'Athens Research',
+              href: 'https://athensresearch.org',
+            },
           ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
   },
+  plugins: [
+    // 'docusaurus-tailwindcss-loader',
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',

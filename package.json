@@ -22,7 +22,14 @@
     "file-loader": "^6.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "docusaurus-tailwindcss-loader": "file:plugins/docusaurus-tailwindcss-loader"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-loader": "^5.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.1.2"
   },
   "browserslist": {
     "production": [
